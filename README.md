@@ -17,4 +17,12 @@ Still not ready yet but it will be!
 
 ## Looking for colaborators
 
-Join the project: [http://pwnpress.org/](http://pwnpress.org/#join)
+The project needs:
+
+- People to take care of social media and promotion
+- People with cybersecurity skills
+- People with Java skills
+- People with PHP skills
+- People with Python skills
+
+If you have any other skills that you consider relevant for the project, let me know! Join the project: [http://pwnpress.org/](http://pwnpress.org/#join)
