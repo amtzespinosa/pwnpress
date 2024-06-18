@@ -4,12 +4,12 @@
 
 ## Features
 
--[x] **Automated Scanning**: Automatically scans WordPress websites for info gathering and known vulnerabilities.
--[ ] **Multiple Exploitation Techniques**: Supports SQLi, XSS, RCE, file inclusion, path traversal, SSRF, and insecure file uploads.
--[x] **Request Crafting**: Constructs and sends HTTP requests with injected payloads.
--[ ] **Response Analysis**: Analyzes server responses to detect vulnerabilities.
--[ ] **Exploitation**: Attempts to exploit detected vulnerabilities.
--[x] **Settings Management**: Allows setting constant parameters for scanning and exploitation.
+- [x] **Automated Scanning**: Automatically scans WordPress websites for info gathering and known vulnerabilities.
+- [ ] **Multiple Exploitation Techniques**: Supports SQLi, XSS, RCE, file inclusion, path traversal, SSRF, and insecure file uploads.
+- [x] **Request Crafting**: Constructs and sends HTTP requests with injected payloads.
+- [ ] **Response Analysis**: Analyzes server responses to detect vulnerabilities.
+- [ ] **Exploitation**: Attempts to exploit detected vulnerabilities.
+- [x] **Settings Management**: Allows setting constant parameters for scanning and exploitation.
 
 ## Doc
 
