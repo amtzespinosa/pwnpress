@@ -27,6 +27,29 @@ If anyone out there wants to help, you're welcome!
 - [ ] **Exploitation**: Attempts to exploit detected vulnerabilities.
 - [ ] **Multiple Exploitation Techniques**: Supports SQLi, XSS, RCE, file inclusion, path traversal, SSRF, and insecure file uploads.
 
+## Installing & Running 
+
+```
+Please, report any bug or problem in the Issues section.
+```
+
+### Option 1 - Java:
+With Java installed, you can download the *.jar* file and run it with the following command:
+`java -jar pwnpress_1.2.0_cli.jar`
+
+### Option 2 - Debian:
+Install **openjdk-17-jre**:
+`sudo apt install openjdk-17-jre`
+
+Then, download the Debian package and install it with the following comand:
+`sudo dpkg -i pwnpress_1.2.0.deb`
+
+Now, run the tool:
+`pwnpress`
+
+### Option 3 - Windows:
+Download the *.zip* file and extract it. Then, just execute the *.exe* file.
+
 
 ## Basic usage
 
