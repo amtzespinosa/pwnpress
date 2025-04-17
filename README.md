@@ -1,4 +1,8 @@
-![PwnPress](pwnpress-gh.png)
+<div align="center">
+  <img src="/pwnpress_logo.png" alt="" width="120">
+</div>
+
+<br/>
 
 **[PwnPress Framework](http://pwnpress.org/)** is a powerful and automated WordPress vulnerability scanner - the exploitation tool part stills under development and **looking for colaborators**. It can scan WordPress sites (in the same way as **WPScan**) and it aims detect and, in the future, also exploit vulnerabilities in WordPress core, plugins, and themes. **It is completely free, open source and with no API rate limit.**
 
