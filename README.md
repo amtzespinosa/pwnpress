@@ -51,6 +51,8 @@ Then, download the Debian package and install it with the following comand:
 Now, run the tool:
 `pwnpress`
 
+> Note: It has been tested on Ubuntu 22.04 and works lovely. BUT, it does not work on Kali Linux. I am working on solving this issue ASAP. If you have any idea/solution, you are welcome!
+
 ### Option 3 - Windows:
 Download the *.zip* file and extract it. Then, just execute the *.exe* file.
 
