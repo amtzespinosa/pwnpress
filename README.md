@@ -39,19 +39,23 @@ Please, report any bug or problem in the Issues section.
 
 ### Option 1 - Java:
 With Java installed, you can download the *.jar* file and run it with the following command:
-`java -jar pwnpress_1_2_0_cli.jar`
+`java -jar pwnpress_1_3_1_cli.jar`
 
 ### Option 2 - Debian:
-Install **openjdk-17-jre**:
-`sudo apt install openjdk-17-jre`
+Install **openjdk-21-jre** if not installed:
+`sudo apt install openjdk-21-jre`
 
 Then, download the Debian package and install it with the following comand:
-`sudo dpkg -i pwnpress_1_2_0_cli.deb`
+`sudo dpkg -i pwnpress_1_3_1_cli.deb`
 
 Now, run the tool:
 `pwnpress`
 
-> Note: It has been tested on Ubuntu 22.04 and works lovely. BUT, it does not work on Kali Linux. I am working on solving this issue ASAP. If you have any idea/solution, you are welcome!
+> Note: It has been tested only Kali Linux 2025.2 and works lovely!
+
+<div align="center">
+  <img src="/pwnpress_img/pwnpress_kali.png" alt="pwnpress console in kali linux">
+</div>
 
 ### Option 3 - Windows:
 Download the *.zip* file and extract it. Then, just execute the *.exe* file.
