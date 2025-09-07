@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/pwnpress_logo.png" alt="" width="120">
+  <img src="/pwnpress_img/pwnpress_logo.png" alt="" width="120">
 </div>
 
 <br/>
