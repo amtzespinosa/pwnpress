@@ -43,11 +43,32 @@ public class WPValidator {
      */
     public static boolean singleValidate(String domain) {
         try {
-            if (!domain.startsWith("https")) {
-                domain = "https://" + domain; // Default to HTTPS
+            // Normalize input
+            if (!domain.startsWith("http://") && !domain.startsWith("https://")) {
+                // Default to https first, fall back to http
+                domain = "https://" + domain;
             }
 
-            HttpURLConnection connection = HttpRequest.getRequest(domain);
+            HttpURLConnection connection;
+            try {
+                connection = HttpRequest.getRequest(domain);
+            } catch (IOException sslEx) {
+                // Retry with http if https fails
+                if (domain.startsWith("https://")) {
+                    String httpDomain = domain.replaceFirst("https://", "http://");
+                    System.out.println("[!] HTTPS failed, retrying with HTTP: " + httpDomain);
+                    connection = HttpRequest.getRequest(httpDomain);
+                    domain = httpDomain;
+                } else {
+                    throw sslEx;
+                }
+            }
+
+            // If user explicitly passed http:// — warn them
+            if (domain.startsWith("http://")) {
+                System.out.println("[!] Warning: Connection to " + domain + " is not encrypted (HTTP only).");
+            }
+
             int responseCode = connection.getResponseCode();
             String response = HttpRequest.readResponse(connection);
 
@@ -101,28 +122,6 @@ public class WPValidator {
         if (!wpSites.isEmpty()) {
             saveWordPressSites(wpSites, outputFile);
         }
-    }
-
-    /**
-     * Checks if a domain is running WordPress.
-     * @param domain The domain to check.
-     * @return True if WordPress is detected, false otherwise.
-     */
-    private static boolean isWordPress(String domain) {
-        try {
-            if (!domain.startsWith("http")) {
-                domain = "https://" + domain; // Default to HTTPS
-            }
-
-            HttpURLConnection connection = HttpRequest.getRequest(domain);
-            String response = HttpRequest.readResponse(connection);
-
-            return containsWordPressIndicators(response);
-
-        } catch (IOException e) {
-            System.err.println("[-] Error checking " + domain + ": " + e.getMessage());
-        }
-        return false;
     }
 
     /**

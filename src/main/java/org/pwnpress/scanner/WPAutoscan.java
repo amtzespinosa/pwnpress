@@ -39,9 +39,13 @@ public class WPAutoscan {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
             System.out.println("[+] " + CustomFormat.padRight("Time started:", 20) + startDateTime.format(formatter));
 
+            // TODO: Server fingerprinting
+
             // ----------------------------------------
-            // NETWORK
+            // SERVER
             // ----------------------------------------
+
+            ServerFingerprinter.fingerprint(urlStr);
 
             // Extract headers
             HeaderExtractor.extractHeaders(urlStr);
