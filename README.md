@@ -51,7 +51,7 @@ Then, download the Debian package and install it with the following comand:
 Now, run the tool:
 `pwnpress`
 
-> Note: It has been tested only Kali Linux 2025.2 and works lovely!
+> Note: It has been tested only on Kali Linux 2025.2 and works lovely!
 
 <div align="center">
   <img src="/pwnpress_img/pwnpress_kali.png" alt="pwnpress console in kali linux">
